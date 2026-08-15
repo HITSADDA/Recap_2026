@@ -1,0 +1,37 @@
+{
+  "compilerOptions": {
+    "target": "ES2022",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
+
+    "strict": true,
+
+    "paths": {
+      "@/*": [
+        "./src/*",
+        "./src/components/*"
+      ]
+    },
+
+    // Warnings if code is unused (variables and functions and other.)
+    "noUnusedLocals": true,
+    "noUnusedParameters": true,
+
+    "allowUnreachableCode": true, // Warning on Unreachable Code
+
+    // Typing Errors -> Warning
+    "allowUnusedLabels": false,
+    "noUncheckedSideEffectImports": true, // Error if import is not used in the code  
+
+    "noFallthroughCasesInSwitch": true, // Error if switch case is not handled properly like return or break,
+
+    "outDir": "dist",
+    "rootDir": "src",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+
+    "noUncheckedIndexedAccess": true, // first have to check for index before use 
+    "noPropertyAccessFromIndexSignature": true, // forst check if have the property
+  },
+  "include": ["src"]
+}
