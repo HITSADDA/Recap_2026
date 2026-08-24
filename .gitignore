@@ -25,3 +25,7 @@ ENV/
 .coverage
 .coverage.*
 htmlcov/
+ .venv/
+ .env
+*/.env
+**/.env
