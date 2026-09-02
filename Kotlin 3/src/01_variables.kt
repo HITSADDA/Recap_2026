@@ -5,10 +5,7 @@
 // Var ----->
     // Var -> Can be reassigned. Is a Value Type
 
-
-
 fun main(){
-
     val age = 55;
     // age = 11; // Error
 
