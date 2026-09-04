@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+    --color-ui-bg: var(--bg);
+    --color-ui-text: var(--text);
+    --color-ui-btn: var(--btn);
+    --color-ui-btn-hover: var(--btn-hover);
+}
+
+:root{
+    --bg: #f8fafc;
+    --text: #0f172a;
+    --btn: #2563ed;
+    --btn-hover: #1550c6;
+}
+
+[data-theme="dark"]{
+    --bg: #020817;
+    --text: #f8fafc;
+    --btn: #8b5cf6;
+    --btn-hover: #46209d;
+}
+
+[data-theme="forest"]{
+    --bg: #052e16;
+    --text: #ecfdf5;
+    --btn: #21c364;
+    --btn-hover: #02963f;
+}
