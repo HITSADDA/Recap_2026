@@ -1,21 +1,15 @@
-import {createReadStream, createWriteStream} from 'fs'
+import fs from 'fs'
 import path from 'path'
-
-const inputFilePath = path.join(import.meta.dirname, "input.txt")
-const outputFilePath = path.join(import.meta.dirname, "output.txt")
+import express from 'express' 
 
 
-const readableStream = createReadStream(inputFilePath, {
-    encoding: 'utf-8',
-    highWaterMark: 16
+const app = express()
+
+
+app.get('/', (req, res)=>{
+    const stream = fs.createReadStream('input.txt', 'utf-8');
+    stream.on('data', (chunk)=>res.write(chunk))
+    stream.on('end', ()=>res.end())
 })
 
-readableStream.on('data', (chunk)=>{
-    console.log('Buffer: ', Buffer.from(chunk))
-    console.log('Chunk: ', chunk)
-    writableStream.write(chunk)
-})
-
-const writableStream = createWriteStream(outputFilePath)
-
-readableStream.pipe(writableStream)
+app.listen(3000, ()=>console.log(`app is running on http://localhost:3000`))
