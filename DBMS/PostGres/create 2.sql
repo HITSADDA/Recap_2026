@@ -1,0 +1,16 @@
+CREATE TABLE users(
+	id SERIAL PRIMARY KEY,
+	name VARCHAR(200) NOT NULL,
+	address VARCHAR(200) NOT NULL,
+	email VARCHAR(200)
+);
+
+CREATE TABLE orders(
+	id SERIAL PRIMARY KEY,
+	title VARCHAR(200) NOT NULL,
+	price INT NOT NULL,
+	product_id SERIAL REFERENCES users
+);
+
+ALTER TABLE orders
+RENAME COLUMN "product_id" TO "user_id";

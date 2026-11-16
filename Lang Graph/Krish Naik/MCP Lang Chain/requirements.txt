@@ -1,0 +1,9 @@
+ipykernel
+langchain
+langchain-mcp-adapters
+mcp
+langgraph
+langchain-groq
+duckduckgo-search
+langchain-community
+langgraph-cli[inmem]

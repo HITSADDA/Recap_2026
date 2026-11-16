@@ -29,5 +29,5 @@ print(y)
 @Mutable:- 
     List, Set, Dictionary, Array, ByteArray
 
-    Ca be changed in-place
+    Can be changed in-place
 """

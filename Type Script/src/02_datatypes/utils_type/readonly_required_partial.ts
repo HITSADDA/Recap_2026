@@ -4,7 +4,7 @@ type UserType = {
     password: string;
 }
 
-//  @@@@@@@ Readonly
+//  @@@@@@@ Readonly -> Cannot reassign properties
 
 type ReadonlyUserType = Readonly<UserType>;
 

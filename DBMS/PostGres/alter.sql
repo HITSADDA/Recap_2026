@@ -1,0 +1,8 @@
+ALTER TABLE "users"
+	ALTER COLUMN email
+	SET DATA TYPE VARCHAR(60);
+
+ALTER TABLE "seller"
+	ALTER COLUMN email
+	SET DATA TYPE VARCHAR(60),
+	ADD CONSTRAINT seller_email_unique  UNIQUE (email);

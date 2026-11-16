@@ -1,0 +1,39 @@
+header{
+    display: flex;
+    width: 100vw;
+    height: 10vh;
+    align-items: center;
+    justify-content: center;
+}
+
+ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem;
+}
+
+li {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+main {
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+section {
+    width: 90vw;
+    display: grid;
+    grid-template-columns: 4fr 4fr 4fr;
+    gap: 2rem;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}

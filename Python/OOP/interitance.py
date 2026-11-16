@@ -41,8 +41,8 @@ class Father(GrandPA):
         print("Fater Called")
         super().__init__()
 
-    # def what_is_your_name(self):
-    #     print("my name is father")
+    def what_is_your_name(self):
+        print("my name is father")
 
 class Mother:
     def __init__(self):
@@ -62,6 +62,7 @@ obj2 = Child()
 
 
 # MRO
+print("-------------->>>><<<<----------")
 obj2.what_is_your_name()
 
 print(Child.__mro__)

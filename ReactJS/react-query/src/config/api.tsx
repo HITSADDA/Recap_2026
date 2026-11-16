@@ -2,7 +2,7 @@ import axios from "axios"
 
 export const api = axios.create({
     baseURL: "https://jsonplaceholder.typicode.com/",
-})
+});
 
 // Older Version
 // async function fetchData<T>(): Promise<T | []> {
@@ -13,7 +13,7 @@ export const api = axios.create({
 //         console.log(error)
 //         throw new Error('Error in fetching api: ')
 //     }
-// }
+// } 
 
 async function fetchData<T>(pageNumber: number): Promise<T | []> {
     try {
