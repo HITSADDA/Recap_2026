@@ -7,3 +7,11 @@ langchain-groq
 duckduckgo-search
 langchain-community
 langgraph-cli[inmem]
+pymupdf
+transformers
+torch
+scikit-learn
+langchain-core
+langchain-text-splitters
+pillow
+langchain-core
